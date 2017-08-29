@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/EDUCATION', function (req,res) {
-res.send(`12th pass..Electronics Engineer.. `);
+res.sendFile(path.join(__dirname, 'ui', 'EDUCATION.html'));
 });
 
 app.get('/AIM', function (req,res) {
