@@ -13,7 +13,7 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 app.get('/Ganpati Bappa Morya', function (req,res) {
-res.send('Lord Ganesha is considered the god of wealth, prosperity and good fortune.
+res.send(`Lord Ganesha is considered the god of wealth, prosperity and good fortune.
 The festival is heavily celebrated in Andhra Pradesh, Goa, Gujarat, Madhya Pradesh, Maharashtra, Telangana, Orissa, Pondicherry, Tamil Nadu, Karnataka, Rajasthan, Chhattisgarh.
 Maharashtra is the state known for grand celebrations during this festival.
 Although Ganesh Chaturthi is widely celebrated it is not a public holiday, because there are so many religions in India they had to abolish all public holidays and have only three: Independence Day (15 August), Republic Day (26 January) and Gandhi’s birthday (2 October).
@@ -36,7 +36,7 @@ However, Shiva who had gone out, returned home and Ganesha didn’t know who he 
 In a combat between the two, Shiva severed Ganesha’s head.
 Parvati was enraged and Shiva promised that Ganesha would live again.
 The only north-facing head of a dead person that could be found was the head of an elephant, and Shiva fixed the head on to Ganesha’s body and brought him back to life.
-The other story is that Ganesha was created by Shiva and Parvati on request of the Devas to have an obstacles creator in the path of demonic beings and Vighnaharta the obstacle averter, or remover of obstacles, to help the Devas. ');
+The other story is that Ganesha was created by Shiva and Parvati on request of the Devas to have an obstacles creator in the path of demonic beings and Vighnaharta the obstacle averter, or remover of obstacles, to help the Devas. `);
 
 
 });
