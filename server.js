@@ -14,11 +14,10 @@ app.get('/ui/style.css', function (req, res) {
 });
 app.get('/EDUCATION', function (req,res) {
 res.send(`12th pass..Electronics Engineer.. `);
-
-
 });
-
-
+app.get('/AIM', function (req,res) {
+res.send('To earn money..and to do something good for this society');
+});
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
