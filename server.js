@@ -17,6 +17,10 @@ app.get('/aim', function (req,res) {
 res.sendFile(path.join(__dirname, 'ui', 'aim.html'));
 });
 
+app.get('/maa', function (req,res) {
+res.sendFile(path.join(__dirname, 'ui', 'maa.html'));   
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
