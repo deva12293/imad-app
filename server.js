@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-app.get('/Ganpati Bappa Morya', function (req,res) {
+app.get('/Ganesha', function (req,res) {
 res.send(`Lord Ganesha is considered the god of wealth, prosperity and good fortune.
 The festival is heavily celebrated in Andhra Pradesh, Goa, Gujarat, Madhya Pradesh, Maharashtra, Telangana, Orissa, Pondicherry, Tamil Nadu, Karnataka, Rajasthan, Chhattisgarh.
 Maharashtra is the state known for grand celebrations during this festival.
