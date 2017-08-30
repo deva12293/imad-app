@@ -9,7 +9,11 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-
+var RefreshCounter= 0;
+app.get('/RefreshCounter', function (req, res) {
+RefreshCounter= RefreshCounter +1;
+res.send(RefreshCounter.toString());
+});
 
 app.get('/education', function (req,res) {
 res.sendFile(path.join(__dirname, 'ui', 'education.html'));
