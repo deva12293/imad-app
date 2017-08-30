@@ -15,6 +15,10 @@ RefreshCounter= RefreshCounter +1;
 res.send(RefreshCounter.toString());
 });
 
+app.get('/ui/RefreshCounter.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'RefreshCounter.js'));
+});
+
 app.get('/education', function (req,res) {
 res.sendFile(path.join(__dirname, 'ui', 'education.html'));
 });
@@ -35,9 +39,7 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-app.get('/ui/RefreshCounter.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'RefreshCounter.js'));
-});
+
 
 app.get('/ui/deva.jpeg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'deva.jpeg'));
