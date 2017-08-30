@@ -28,7 +28,19 @@
         <div class= "footer">
             This button <button id= "RefreshCounter">PRESS-ME</button> has been clicked <span id= "count"> 0 </span> times! ;
             
+            
         </div>
+        <script>
+            var button = document.getElementById('RefreshCounter');
+var RefreshCounter = 0;
+button.onclick = function() {
+    RefreshCounter= RefreshCounter + 1;
+    var span= document.getElementById('count');
+    span.innerHTML = counter.toString();
+    
+};
+
+        </script>
         <script>
             alert("hello human..Iam a virus..Do you want to download me?");
         </script>
