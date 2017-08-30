@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
 var RefreshCounter= 0;
 app.get('/RefreshCounter', function (req, res) {
 RefreshCounter= RefreshCounter +1;
-res.send(RefreshCounter.tostring());
+res.send(RefreshCounter.toString());
 });
 
 app.get('/education', function (req,res) {
