@@ -35,6 +35,10 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
+app.get('/ui/counter.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'counter.js'));
+});
+
 app.get('/ui/deva.jpeg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'deva.jpeg'));
 });
