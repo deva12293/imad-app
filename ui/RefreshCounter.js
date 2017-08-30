@@ -1,3 +1,5 @@
+console.log('Loaded!');
+
 var button = document.getElementById('RefreshCounter');
 var RefreshCounter = 0;
 button.onclick = function() {
